@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+		<title>Título da Página</title>
+        
+        <style>
+        	body{
+            	background-color:black;
+            }
+        	h1,p{
+            	color:white;
+            }
+        </style>
+	</head>
+    
+	<body>
+    
+		<h1 id="titulo">Isso é um Título</h1>
+		<p id="paragrafo">E isso é um paragrafo.</p>
+        
+    <button onclick="minhaFuncao()">Isto é um botão</button>
+        
+    <script>
+      var alterado = false
+      
+      function minhaFuncao(){
+        if (alterado == true){
+          document.getElementById('titulo').innerHTML = "Isso nunca deixou de ser um título!"
+          document.getElementById('paragrafo').innerHTML = "E isso ainda é um paragráfo.<br>Recarregue a página para reiniciar o código"
+        } else {
+          document.getElementById('titulo').innerHTML = "Olá,Mundo!"
+          document.getElementById('paragrafo').innerHTML = "Ao clicar no botão a pagina altera!"
+          alterado = true
+        }
+      }
+    </script>
+    
+	</body>
+  
+</html>
